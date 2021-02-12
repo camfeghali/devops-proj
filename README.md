@@ -32,11 +32,12 @@ mutation {
 ```
 mutation {
   createLink(input: {title: "new link", address:"http://address.org"}){
+    id,
+    address
     title,
     user{
       username
     }
-    address
   }
 }
 ```
